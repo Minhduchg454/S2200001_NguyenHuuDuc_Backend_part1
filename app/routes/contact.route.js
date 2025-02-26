@@ -17,3 +17,5 @@ router.route("/:id")
     .delete(contacts.delete);
 
 module.exports = router;
+
+//exports để sử dụng được ở nhiều nơi
