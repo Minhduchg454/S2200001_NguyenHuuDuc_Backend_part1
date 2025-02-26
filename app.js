@@ -19,7 +19,7 @@ app.get("/", (req, res) => {
   res.json({ message: "Wellcome to contact book application." });
 })
 
-
+// Middleware xu ly loi
 app.use((req, res, next) => {
     return next(new ApiError(404, "Resource not found"));
 });
@@ -29,7 +29,6 @@ app.use((error, req, res, next) => {
         message: error.message || "Internal server Error",
     });
 });
-
 
 //Xuat module app de co the su dung o file khac
 module.exports = app;
