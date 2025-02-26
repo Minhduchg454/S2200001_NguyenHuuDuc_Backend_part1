@@ -14,7 +14,7 @@ app.use(cors());
 app.use(express.json());
 app.use("/api/contacts", contactsRouter);
 
-// Dinh nghia cac route
+// Dinh nghia cac route, req: yc, res: p.hồi. Các endpoind
 app.get("/", (req, res) => {
   res.json({ message: "Wellcome to contact book application." });
 })
@@ -32,3 +32,12 @@ app.use((error, req, res, next) => {
 
 //Xuat module app de co the su dung o file khac
 module.exports = app;
+
+
+/*
+    2. Khai báo thư viện express
+    10. Tạo đối tượng app để sử dụng express
+
+
+
+*/
